@@ -1,0 +1,78 @@
+body {
+    background-image: url(images/background1.png);
+    background-color:black;
+    background-position: 0% 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.text {
+    display: block;
+    padding-top: 200px;
+    margin: auto;
+    padding-left: 35%;
+}
+
+h2 {
+    color:rgb(186, 173, 135); 
+    font-size: 40px;
+    font-family: Cambria, Cochin;
+}
+
+pre {
+    text-align: left; 
+    margin-left: 60px;
+    font-family: Cambria, Cochin;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: antiquewhite;
+}
+
+#back, #next {
+    background-color: rgb(189, 185, 152);
+    position: absolute;
+    padding: 5px 10px;
+    color: rgb(63, 45, 97);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: Cambria, Cochin;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back {
+    top: 30px;
+    left: 30px;
+}
+
+#next {
+    bottom: 30px;
+    right: 30px;
+}
+
+#back:hover, #next:hover {
+    background-color: rgba(143, 80, 157, 0.675);
+    color: rgb(189, 185, 152);
+}
+
+.rocket img {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 200px;
+    height: 100px;
+    opacity: 0.8;
+    animation-name: launch;
+    animation-duration: 5s;
+    animation-direction: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes launch {
+    0% {transform: translate(0, 0) rotate(0deg);}
+    100% {transform: translate(1000px, -200px) rotate(50deg);}
+}
